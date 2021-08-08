@@ -23,3 +23,15 @@ def convert_datetime_timezone(dt, tz1, tz2):
 
 def convert(input_zone, input_time, output_zone):
     i=0
+    
+print( "Please Enter Input Time Zone: US/Alaska, Central, Eastern, Hawaii, Mountain, Pacific" )
+start_zone = raw_input()
+
+print( "Please Enter Time: e.g., 10:00, 13:00" )
+start_time = raw_input()
+
+print( "Please Enter Input Time Zone: US/Alaska, Central, Eastern, Hawaii, Mountain, Pacific" )
+end_zone = raw_input()
+
+end_Time = conver_datetime_timezone( start_time, start_zone, end_zone )
+print( "Output Time:" + end_time )
